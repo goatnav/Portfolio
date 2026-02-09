@@ -38,8 +38,8 @@
   #right {
     overflow-y: auto;
     width: 60%;
-    max-width: 900px;
-    padding: 6rem 7rem;
+    max-width: 1000px;
+     padding: 1rem 7rem 4rem 7rem;
     background-color: maroon;
     color:white;
 
@@ -87,19 +87,75 @@
 
   #xpCard{
     display:flex;
+    background: maroon;
+
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 14px;
+
+    padding: 1rem;
+
+    transition: all 0.25s ease;
   }
+
+  #xpCard:hover{
+    background: rgba(30, 41, 59, 0.85); 
+
+    border-color: rgba(94, 234, 212, 0.6); 
+
+    box-shadow: 0 8px 40px rgba(94, 234, 212, 0.12);
+
+  }
+
   #xpLeft{
     width: 20%;
+    font-size: small;
   }
   #xpRight{
     display:flex;
     flex-direction: column;
     width:80%;
   }
-  #tag{
-    display:flex;
-  }
 
-  #Experience{
-    margin-top:155px;
-  }
+
+
+  /* PROJECT CARD */
+
+.project-card {
+  background: rgba(15, 23, 42, 0.6);
+
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 14px;
+
+  padding: 2rem;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.project-card:hover {
+  border-color: rgba(94, 234, 212, 0.5);
+
+  box-shadow: 0 0 35px rgba(94, 234, 212, 0.15);
+
+  transform: translateY(-6px);
+}
+
+
+/* TAG PILL */
+
+.tag {
+  background: rgba(94, 234, 212, 0.15);
+
+  color: #5eead4;
+
+  padding: 4px 12px;
+
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+
+  white-space: nowrap;
+}
+
+
+

@@ -4,7 +4,9 @@ export default function About(){
     return(
 
         <div id="about">
-
+                  <h3 className="text-3xl font-bold pt-20">
+                     About <b></b>
+                   </h3>
             <p className="whitespace-pre-line">
                Howdy! I’m a computer science student at Texas A&M University who enjoys building practical, well-designed software that people actually want to use.
                I chose to minor in Statistics to better understand what’s actually happening behind the data I work with. It helps me make smarter decisions when working with machine learning models, analytics, and understanding uncertainty.

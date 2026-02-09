@@ -19,7 +19,7 @@ export default function Xp({
   link
 }: xp){
     return(
-        <a href={link}>
+        <a href={link} target="_blank">
             <div id = "xpCard">
 
                 <div id ="xpLeft">
@@ -29,14 +29,16 @@ export default function Xp({
                 </div>
 
                 <div id = "xpRight">
-                    <span>{company}</span>
+                    <b>{company}</b>
                     <i>{title}</i>
+                    <br></br>
                     <span>{description}</span>
-                    <div id = "tag">
-                        {
-                        tags.map((t) => (<span>{t}</span>))
-                        }
-
+                    <div className="flex flex-wrap gap-2">
+                        {tags.map((tag) => (
+                        <span key={tag} className="tag">
+                            {tag}
+                        </span>
+                        ))}
                     </div>
                 
                 </div>

@@ -2,7 +2,7 @@ import Xp from "./Xp";
 
 const experiences = [
   {
-    date: "May 2025 – Aug 2025",
+    date: "May – Aug 2025",
     company: "Hexagon",
     title: "Smart 3Dx Application Development Intern",
     description:
@@ -11,7 +11,7 @@ const experiences = [
     link: "https://hexagon.com",
   },
   {
-    date: "August 2024 – May 2025",
+    date: "2024 – 2025",
     company: "Karura - University Rover Challenge",
     title: "Full-Stack Developer",
     description:
@@ -23,7 +23,11 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <div id = "Experience">
+    <div id = "experience">
+      <h3 className="text-3xl font-bold pt-20">
+        Experience 
+        <b></b>
+      </h3>
       {experiences.map((x) => (
        <> <Xp key={x.company} {...x} /> <br></br> </>
       ))}
