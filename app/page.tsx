@@ -17,9 +17,11 @@ export default function Home() {
       </div>
 
       <div id="right">
-        <About />
-        <Experience></Experience>
-        <Projects></Projects>
+        <div className="rightContent">
+          <About />
+          <Experience></Experience>
+          <Projects></Projects>
+        </div>
       </div>
 
     </div>
